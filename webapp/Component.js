@@ -28,16 +28,8 @@ sap.ui.define([
 			// set dialog
 			this._helloDialog = new HelloDialog(this.getRootControl());
 
-			// open support window (only for demonstration purpose)
-			if (sap.ui.Device.system.desktop) {
-				setTimeout(function () {
-					jQuery.sap.log.info("opening support window");
-					sap.ui.require(["sap/ui/core/support/Support"], function (Support) {
-						var oSupport = Support.getStub("APPLICATION");
-						oSupport.openSupportTool();
-					});
-				}, 3000);
-			}
+			// create the views based on the url/hash
+			this.getRouter().initialize();
 		},
 
 		exit : function() {
