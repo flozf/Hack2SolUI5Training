@@ -36,6 +36,7 @@ sap.ui.define([
 
 			// create the views based on the url/hash
 			this.getRouter().initialize();
+
 		},
 
 		exit : function() {
@@ -45,6 +46,17 @@ sap.ui.define([
 
 		openHelloDialog : function () {
 			this._helloDialog.open();
+		},
+
+		getContentDensityClass : function() {
+			if (!this._sContentDensityClass) {
+				if (!sap.ui.Device.support.touch) {
+					this._sContentDensityClass = "sapUiSizeCompact";
+				} else {
+					this._sContentDensityClass = "sapUiSizeCozy";
+				}
+			}
+			return this._sContentDensityClass;
 		}
 
 	});
