@@ -13,7 +13,6 @@
 		<semantic:titleHeading>
 			<Title text="{i18n>worklistTitle}" />
 		</semantic:titleHeading>
-
 		<semantic:content>
 			<IconTabBar
 				id="iconTabBar"
