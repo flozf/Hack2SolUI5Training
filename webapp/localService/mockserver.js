@@ -57,7 +57,7 @@ sap.ui.define([
 
 				// handling the metadata error test
 				if (oUriParameters.get("metadataError")) {
-					aRequests.forEach(function (aEntry) {
+					aRequests.forEach(function(aEntry) {
 						if (aEntry.path.toString().indexOf("$metadata") > -1) {
 							fnResponse(500, "metadata Error", aEntry);
 						}
@@ -66,7 +66,7 @@ sap.ui.define([
 
 				// Handling request errors
 				if (sErrorParam) {
-					aRequests.forEach(function (aEntry) {
+					aRequests.forEach(function(aEntry) {
 						if (aEntry.path.toString().indexOf(sEntity) > -1) {
 							fnResponse(iErrorCode, sErrorParam, aEntry);
 						}
