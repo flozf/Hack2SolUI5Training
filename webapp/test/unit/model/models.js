@@ -1,6 +1,6 @@
 /*global QUnit*/
 
-sap.ui.define([
+sap.ui.require([
 	"sap/ui/demo/bulletinboard/model/models",
 	"sap/ui/thirdparty/sinon",
 	"sap/ui/thirdparty/sinon-qunit"
