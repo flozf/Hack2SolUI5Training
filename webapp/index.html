@@ -18,13 +18,16 @@
 	<script>
 		sap.ui.getCore().attachInit(function () {
 			sap.ui.require([
+				"sap/m/Shell",
 				"sap/ui/core/ComponentContainer"
-			], function (ComponentContainer) {
-				new ComponentContainer({
-					name: "sap.ui.demo.walkthrough",
-					settings : {
-						id : "walkthrough"
-					}
+			], function (Shell, ComponentContainer) {
+				new Shell({
+					app: new ComponentContainer({
+						name: "sap.ui.demo.walkthrough",
+						settings: {
+							id: "walkthrough"
+						}
+					})
 				}).placeAt("content");
 			});
 		});
