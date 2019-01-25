@@ -1,6 +1,6 @@
 # Welcome to your UI5 Tutorial
 
-Test 2
+Test 3
 
 This repository contains the steps of the official [UI5 walkthrough](https://openui5beta.hana.ondemand.com/#docs/guide/3da5f4be63264db99f2e5b04c5e853db.html).
 The links below help you getting started. I recommend using the WEB IDE. If you want to play around with the result of the walkthrough you can register for the ES4 system to add a real Gateway system to your application.
